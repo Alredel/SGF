@@ -1461,7 +1461,7 @@ Vous pouvez également suivre la communauté sur Discord :
 * humiliation et size-shaming ;
 * Etc...&#39;&#39;
 
-</tw-passagedata><tw-passagedata pid="4" name="StoryInit" tags="" position="575,25" size="100,100">&lt;&lt;set $VPatrons to true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="4" name="StoryInit" tags="" position="575,25" size="100,100">&lt;&lt;set $VPatrons to false&gt;&gt;
 &lt;&lt;set $motDePasseCorrect to &quot;sgf.15.4.8r1ll14n7.g4m3&quot;&gt;&gt;
 
 &lt;&lt;cacheaudio &quot;clubentry&quot; &quot;img/musics/club/Night&#39;s Heaven.mp3&quot;&gt;&gt;
@@ -3011,10 +3011,10 @@ Tu te balades serainement.
 	&lt;&lt;if $cor gte 7&gt;&gt;Tu repères un drôle d&#39;endroit... Des bruits étranges en sortent.    
     &lt;&lt;linkreplace &quot;Inspecter&quot;&gt;&gt;&lt;&lt;if $cruisingplace is false&gt;&gt;&lt;&lt;notify 4s &#39;&#39;&gt;&gt;Corruption +1&lt;&lt;/notify&gt;&gt;&lt;&lt;set $cor +=1&gt;&gt;&lt;&lt;set $cruisingplace to true&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $exc +=20&gt;&gt;Tu t&#39;approches avec précaution... Et te caches derrière des fourrées...
     
-    &lt;img src=&quot;img\cruising&amp;exhib\cruising1.webp&quot; height=&quot;350px&quot;&gt;
+    &lt;img src=&quot;img\cruisingexhib\cruising1.webp&quot; height=&quot;350px&quot;&gt;
     
     @@.pjth;Merde ! Non mais je ne veux pas voir ça !@@&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/if&gt;&gt;   
-    	&lt;&lt;if $cor gte 10&gt;&gt;&lt;&lt;linkreplace &quot;Rester et regarder un peu plus.&quot;&gt;&gt;&lt;&lt;set $exc +=15&gt;&gt;&lt;img src=&quot;img\cruising&amp;exhib\cruising1.webp&quot; height=&quot;350px&quot;&gt;
+    	&lt;&lt;if $cor gte 10&gt;&gt;&lt;&lt;linkreplace &quot;Rester et regarder un peu plus.&quot;&gt;&gt;&lt;&lt;set $exc +=15&gt;&gt;&lt;img src=&quot;img\cruisingexhib\cruising1.webp&quot; height=&quot;350px&quot;&gt;
 
 		@@.pjth;C&#39;est quand même dingue que des gens baisent n&#39;importe où, comme ça !
 
@@ -3023,18 +3023,18 @@ Tu te balades serainement.
 		Quelle idée de vouloir être vu...
 
 		...@@&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/if&gt;&gt;
-			&lt;&lt;if $cor gte 15&gt;&gt;&lt;&lt;set $exc +=15&gt;&gt;&lt;&lt;linkreplace &quot;Profiter de la vue&quot;&gt;&gt;&lt;img src=&quot;img\cruising&amp;exhib\wank0.gif&quot; height=&quot;350px&quot;&gt;
+			&lt;&lt;if $cor gte 15&gt;&gt;&lt;&lt;set $exc +=15&gt;&gt;&lt;&lt;linkreplace &quot;Profiter de la vue&quot;&gt;&gt;&lt;img src=&quot;img\cruisingexhib\wank0.gif&quot; height=&quot;350px&quot;&gt;
 
 			@@.pjth;Non, vaut mieux que je me barre...@@
 				&lt;&lt;if $exc gte 50&gt;&gt;&lt;&lt;linkreplace &quot;Après tout, tu ne fais de mal à personne...&quot;&gt;&gt;&lt;&lt;set $exc to 0&gt;&gt;&lt;&lt;set $hygiene -=20&gt;&gt;
 
-				&lt;img src=&quot;img\cruising&amp;exhib\wank1.gif&quot; height=&quot;350px&quot;&gt;
+				&lt;img src=&quot;img\cruisingexhib\wank1.gif&quot; height=&quot;350px&quot;&gt;
 
-				&lt;img src=&quot;img\cruising&amp;exhib\wank2.gif&quot; height=&quot;350px&quot;&gt;
+				&lt;img src=&quot;img\cruisingexhib\wank2.gif&quot; height=&quot;350px&quot;&gt;
 
 				@@.pjth;Ah oui, putain !@@
 
-				&lt;img src=&quot;img\cruising&amp;exhib\wank3.gif&quot; height=&quot;350px&quot;&gt;
+				&lt;img src=&quot;img\cruisingexhib\wank3.gif&quot; height=&quot;350px&quot;&gt;
 
 				@@.pjth;... Je crois que je comprends...@@&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;/if&gt;&gt;
@@ -3928,26 +3928,26 @@ Il ne te lâche pas du regard. Mais tu sens qu&#39;il est proche de la fin.
     
     &lt;&lt;linkreplace &quot;Observer&quot;&gt;&gt;&lt;&lt;set $exc +=20&gt;&gt;&lt;&lt;if $firsttoiletquartier is false&gt;&gt;&lt;&lt;set $firsttoiletquartier to true&gt;&gt;&lt;&lt;notify 4s &#39;&#39;&gt;&gt;Corruption +1&lt;&lt;/notify&gt;&gt;&lt;&lt;set $cor +=1&gt;&gt;&lt;&lt;/if&gt;&gt;Tu tournes la tête et regarde l&#39;équipement du voisin.
     
-    &lt;img src=&quot;img\cruising&amp;exhib\toilet2.gif&quot; height=&quot;350px&quot;&gt;
+    &lt;img src=&quot;img\cruisingexhib\toilet2.gif&quot; height=&quot;350px&quot;&gt;
     
     On dirait qu&#39;il t&#39;a vu. Ça n&#39;a pas l&#39;air de trop le déranger. Ou il ne t&#39;a pas vu ?
     
     	&lt;&lt;if $exc gte 60&gt;&gt;Et toi, ça à l&#39;air de te plaire. En tout cas, tu ne contrôles pas ton érection.
         
-        &lt;img src=&quot;img\cruising&amp;exhib\toilet3.gif&quot; height=&quot;350px&quot;&gt;&lt;&lt;/if&gt;&gt;
+        &lt;img src=&quot;img\cruisingexhib\toilet3.gif&quot; height=&quot;350px&quot;&gt;&lt;&lt;/if&gt;&gt;
     &lt;&lt;if $cor gte 12&gt;&gt;&lt;&lt;linkreplace &quot;Profitez de la vue.&quot;&gt;&gt;&lt;&lt;set $exc +=30&gt;&gt;Tu prends ta bite en main. Après tout, tu ne fais de mal à personne.
     
-    &lt;img src=&quot;img\cruising&amp;exhib\toilet5.gif&quot; height=&quot;350px&quot;&gt;
+    &lt;img src=&quot;img\cruisingexhib\toilet5.gif&quot; height=&quot;350px&quot;&gt;
     
     Ton voisin suit la cadence.
     
-    &lt;img src=&quot;img\cruising&amp;exhib\toilet4.webp&quot; height=&quot;350px&quot;&gt;
+    &lt;img src=&quot;img\cruisingexhib\toilet4.webp&quot; height=&quot;350px&quot;&gt;
     
     Mais ça devrait s&#39;arrêter là...
     
     &lt;&lt;if $cor gte 17 &amp;&amp; $exc gte 70&gt;&gt;&lt;&lt;linkreplace &quot;Te finir&quot;&gt;&gt;&lt;&lt;set $exc to 0&gt;&gt;&lt;&lt;set $hygiene -=15&gt;&gt;&lt;&lt;if $firsttimecumtoiletquartier is false&gt;&gt;&lt;&lt;notify 4s &#39;&#39;&gt;&gt;Corruption +1&lt;&lt;/notify&gt;&gt;&lt;&lt;set $cor +=1&gt;&gt;&lt;&lt;set $firsttimecumtoiletquartier to true&gt;&gt;&lt;&lt;/if&gt;&gt;Tu prends ton pieds, là.
     
-    &lt;img src=&quot;img\cruising&amp;exhib\cumtoilet1.gif&quot; height=&quot;350px&quot;&gt;
+    &lt;img src=&quot;img\cruisingexhib\cumtoilet1.gif&quot; height=&quot;350px&quot;&gt;
     
     @@.pjth;Aaaahhh... Intéressant...@@
     
@@ -4232,10 +4232,10 @@ Tu te balades serainement.
 	&lt;&lt;if $cor gte 7&gt;&gt;Tu repères un drôle d&#39;endroit... Des bruits étranges en sortent.    
     &lt;&lt;linkreplace &quot;Inspecter&quot;&gt;&gt;&lt;&lt;if $cruisingplace2 is false&gt;&gt;&lt;&lt;notify 4s &#39;&#39;&gt;&gt;Corruption +1&lt;&lt;/notify&gt;&gt;&lt;&lt;set $cor +=1&gt;&gt;&lt;&lt;set $cruisingplace2 to true&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;set $exc +=20&gt;&gt;Tu t&#39;approches avec précaution... Et te caches derrière des fourrées...
     
-    &lt;img src=&quot;img\cruising&amp;exhib\cruising0.gif&quot; height=&quot;350px&quot;&gt;
+    &lt;img src=&quot;img\cruisingexhib\cruising0.gif&quot; height=&quot;350px&quot;&gt;
     
     @@.pjth;Merde ! Non mais je ne veux pas voir ça !@@&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/if&gt;&gt;   
-    	&lt;&lt;if $cor gte 10&gt;&gt;&lt;&lt;linkreplace &quot;Rester et regarder un peu plus.&quot;&gt;&gt;&lt;&lt;set $exc +=15&gt;&gt;&lt;img src=&quot;img\cruising&amp;exhib\cruising0.gif&quot; height=&quot;350px&quot;&gt;
+    	&lt;&lt;if $cor gte 10&gt;&gt;&lt;&lt;linkreplace &quot;Rester et regarder un peu plus.&quot;&gt;&gt;&lt;&lt;set $exc +=15&gt;&gt;&lt;img src=&quot;img\cruisingexhib\cruising0.gif&quot; height=&quot;350px&quot;&gt;
 
 		@@.pjth;C&#39;est quand même dingue que des gens baisent n&#39;importe où, comme ça !
 
@@ -4244,18 +4244,18 @@ Tu te balades serainement.
 		Quelle idée de vouloir être vu...
 
 		...@@&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/if&gt;&gt;
-			&lt;&lt;if $cor gte 15&gt;&gt;&lt;&lt;set $exc +=15&gt;&gt;&lt;&lt;linkreplace &quot;Profiter de la vue&quot;&gt;&gt;&lt;img src=&quot;img\cruising&amp;exhib\wank0.gif&quot; height=&quot;350px&quot;&gt;
+			&lt;&lt;if $cor gte 15&gt;&gt;&lt;&lt;set $exc +=15&gt;&gt;&lt;&lt;linkreplace &quot;Profiter de la vue&quot;&gt;&gt;&lt;img src=&quot;img\cruisingexhib\wank0.gif&quot; height=&quot;350px&quot;&gt;
 
 			@@.pjth;Non, vaut mieux que je me barre...@@
 				&lt;&lt;if $exc gte 50&gt;&gt;&lt;&lt;linkreplace &quot;Après tout, tu ne fais de mal à personne...&quot;&gt;&gt;&lt;&lt;set $exc to 0&gt;&gt;&lt;&lt;set $hygiene -=20&gt;&gt;
 
-				&lt;img src=&quot;img\cruising&amp;exhib\wank1.gif&quot; height=&quot;350px&quot;&gt;
+				&lt;img src=&quot;img\cruisingexhib\wank1.gif&quot; height=&quot;350px&quot;&gt;
 
-				&lt;img src=&quot;img\cruising&amp;exhib\wank2.gif&quot; height=&quot;350px&quot;&gt;
+				&lt;img src=&quot;img\cruisingexhib\wank2.gif&quot; height=&quot;350px&quot;&gt;
 
 				@@.pjth;Ah oui, putain !@@
 
-				&lt;img src=&quot;img\cruising&amp;exhib\wank3.gif&quot; height=&quot;350px&quot;&gt;
+				&lt;img src=&quot;img\cruisingexhib\wank3.gif&quot; height=&quot;350px&quot;&gt;
 
 				@@.pjth;... Je crois que je comprends...@@&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;/if&gt;&gt;
@@ -4699,23 +4699,23 @@ Utiliser les machines pour faire de [[l&#39;exercice|Sport]]
 &lt;&lt;if $jaydenSport &amp;&amp; $temps % 6 is 3&gt;&gt;Retrouver [[Jayden|Jayden Sport]] à la salle de sport.@@.jaytr;@@&lt;&lt;/if&gt;&gt;
 Retourner au [[stade|Stade]]</tw-passagedata><tw-passagedata pid="93" name="Une pipe" tags="" position="3625,150" size="100,100">&lt;&lt;notify 4s &#39;&#39;&gt;&gt;Argent -20 €&lt;&lt;/notify&gt;&gt;&lt;&lt;set $argent -=20&gt;&gt;&lt;&lt;set $exc to 0&gt;&gt;&lt;&lt;set $hygiene -=50&gt;&gt;&lt;&lt;set $bes +=30&gt;&gt;Tu suis la demoiselle.
 
-&lt;img src=&quot;img\cruising&amp;exhib\pute2.gif&quot; height=&quot;350px&quot;&gt;
+&lt;img src=&quot;img\cruisingexhib\pute2.gif&quot; height=&quot;350px&quot;&gt;
 
 Vous vous arrêtez dans une vielle cabane pas très loin dans le bois.
 
 @@.rdm;Prostituée - Allez, montre l&#39;engin !@@
 
-&lt;&lt;if $orient is &quot;Hétérosexuel&quot; || $orient is &quot;Hétérosexuel ???&quot;&gt;&gt;&lt;&lt;linkreplace &quot;La laisser te dessaper&quot;&gt;&gt;&lt;img src=&quot;img\cruising&amp;exhib\putereveal1.gif&quot; heignt=&quot;350px&quot;&gt;
+&lt;&lt;if $orient is &quot;Hétérosexuel&quot; || $orient is &quot;Hétérosexuel ???&quot;&gt;&gt;&lt;&lt;linkreplace &quot;La laisser te dessaper&quot;&gt;&gt;&lt;img src=&quot;img\cruisingexhib\putereveal1.gif&quot; heignt=&quot;350px&quot;&gt;
 
 @@.rdm;Prostituée - Hé bah mon coquin... C&#39;est pas la moitié d&#39;une, celle-là !@@
 
 Elle a l&#39;air ravie et se montre affamée :
 
-&lt;img src=&quot;img\cruising&amp;exhib\pute3.webp&quot; height=&quot;350px&quot;&gt;
+&lt;img src=&quot;img\cruisingexhib\pute3.webp&quot; height=&quot;350px&quot;&gt;
 
 Tu ne vas pas tenir longtemps...
 
-&lt;&lt;linkreplace &quot;Jouir&quot;&gt;&gt;&lt;&lt;if $virgin is true&gt;&gt;&lt;&lt;notify 4s &#39;&#39;&gt;&gt;Une pipe ne t&#39;enlèvera pas ta virginité.&lt;&lt;/notify&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;img src=&quot;img\cruising&amp;exhib\pute4.webp&quot; height=&quot;350px&quot;&gt;
+&lt;&lt;linkreplace &quot;Jouir&quot;&gt;&gt;&lt;&lt;if $virgin is true&gt;&gt;&lt;&lt;notify 4s &#39;&#39;&gt;&gt;Une pipe ne t&#39;enlèvera pas ta virginité.&lt;&lt;/notify&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;img src=&quot;img\cruisingexhib\pute4.webp&quot; height=&quot;350px&quot;&gt;
 
 @@.rdm;Prostituée - Oui ! T&#39;en avais besoin, je vois ça !!!@@
 @@.pj;$firstname - Euh... Pardon pour...@@
@@ -4724,7 +4724,7 @@ Tu ne vas pas tenir longtemps...
 Tu t&#39;essuies à la va-vite et sors de la cabane comme un enfant qui viendrait de faire une grosse connerie.
 
 &lt;&lt;link &quot;Retouner au parc&quot; &quot;Grand Parc&quot;&gt;&gt;&lt;&lt;if $firsttimepipe is false&gt;&gt;&lt;&lt;set $firsttimepipe to true&gt;&gt;&lt;&lt;notify 4s &#39;&#39;&gt;&gt;Corruption +1&lt;&lt;/notify&gt;&gt;&lt;&lt;set $cor +=1&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;elseif $orient is &quot;Bisexuel&quot; || $orient is &quot;Homosexuel&quot;&gt;&gt;&lt;&lt;linkreplace &quot;La laisser te dessaper&quot;&gt;&gt;&lt;img src=&quot;img\cruising&amp;exhib\putereveal2.gif&quot; heignt=&quot;350px&quot;&gt;
+&lt;&lt;elseif $orient is &quot;Bisexuel&quot; || $orient is &quot;Homosexuel&quot;&gt;&gt;&lt;&lt;linkreplace &quot;La laisser te dessaper&quot;&gt;&gt;&lt;img src=&quot;img\cruisingexhib\putereveal2.gif&quot; heignt=&quot;350px&quot;&gt;
 
 @@.rdm;Prostituée - On dirait que je ne te fais pas envie ?@@
 @@.pjth;Bah oui pourquoi je ne bande pas ?!@@
@@ -4831,39 +4831,39 @@ Tu te balades tranquillement. L&#39;air est frais. Les lumières sont douces. To
 
 Tu continues ton chemin. Mais 100 mètres plus loin, quelque chose t&#39;attrape le bras !
 
-&lt;img src=&quot;img\cruising&amp;exhib\nightwalk1.webp&quot; height=&quot;350px&quot;&gt;
+&lt;img src=&quot;img\cruisingexhib\nightwalk1.webp&quot; height=&quot;350px&quot;&gt;
 
 Tu n&#39;as pas le temps de réagir que l&#39;homme est sur toi.
 
-&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruising&amp;exhib\nightwalk2.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
+&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruisingexhib\nightwalk2.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
 
 &lt;&lt;linkreplace &quot;Tenter de te défendre&quot;&gt;&gt;&lt;&lt;set $exc += 50&gt;&gt;&lt;&lt;set $hygiene -= 50&gt;&gt;&lt;&lt;set $nrg to 0&gt;&gt;&lt;&lt;set $anus += 0.5&gt;&gt;&lt;&lt;if $virginanal is true&gt;&gt;&lt;&lt;set $virginanal to false&gt;&gt;&lt;&lt;notify 4s &#39;&#39;&gt;&gt;Tu as perdu ta virginité anal&lt;&lt;/notify&gt;&gt;&lt;&lt;/if&gt;&gt;Tu essayes de te défendre, mais il te mets à terre et tente déjà de te pénétrer.
 
-&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruising&amp;exhib\nightwalk3.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
+&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruisingexhib\nightwalk3.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
 
 Tu ne peux rien faire, tu es sonné. @@.pjth;Ou alors...@@
 Il s&#39;affaire même pas à te lubrifier. Il baisse son pantalon.
 
-&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruising&amp;exhib\nightwalk4.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
+&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruisingexhib\nightwalk4.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
 
 Il te pénètre sans ménagement. @@.pjth;Et je ne fais rien...@@
 
-&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruising&amp;exhib\nightwalk5.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
+&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruisingexhib\nightwalk5.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
 
 @@.pjth;Heureusement qu&#39;il à une petite bite... Euh, je ne devrais pas être affolé moi ?@@
 L&#39;homme semble avoir trouver son rythme.
 
-&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruising&amp;exhib\nightwalk6.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
+&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruisingexhib\nightwalk6.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
 
 @@.pjth;Hum... Je ne devrais pas aimer... C&#39;est mal ! Haaaa...@@
 Mais ton agresseur est sur le point de finir.
 
-&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruising&amp;exhib\nightwalk7.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
+&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruisingexhib\nightwalk7.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
 
 @@.pjth;Haaaa... C&#39;est bouillant !@@ tu te dis alors que son sperme dégouline le long de ton trou.
 Puis le mec tombe sur le côté, satisfait de ce qu&#39;il vient de faire.
 
-&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruising&amp;exhib\nightwalk8.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
+&lt;video height=&quot;500px&quot; controls&gt;&lt;source src=&quot;img\cruisingexhib\nightwalk8.mp4&quot; type=&quot;video/mp4&quot;&gt;Your browser does not support the video tag.&lt;/video&gt;
 
 @@.pjth;Pourquoi ? ... ... Pourquoi j&#39;ai aimé, PUTAIN !!!@@
 
@@ -9254,18 +9254,18 @@ C&#39;est sa mère qui arrive la première.
 &lt;img src=&quot;img\jayden\jaymom1.jpg&quot; height=&quot;350px&quot;&gt;
 
 &lt;&lt;/linkreplace&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="151" name="Petit coup vite fait" tags="" position="2775,275" size="100,100">&lt;&lt;notify 4s &#39;&#39;&gt;&gt;Il y a des chances qu&#39;on t&#39;ait vu avec ce mec : Réputation -5&lt;&lt;/notify&gt;&gt;&lt;&lt;set $rep -=5&gt;&gt;&lt;&lt;set $exc +=20&gt;&gt;&lt;&lt;set $hygiene -=20&gt;&gt;&lt;&lt;set $bes +=15&gt;&gt;Vous ne mettez pas longtemps à trouver des toilettes publiques.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="151" name="Petit coup vite fait" tags="" position="2725,525" size="100,100">&lt;&lt;notify 4s &#39;&#39;&gt;&gt;Il y a des chances qu&#39;on t&#39;ait vu avec ce mec : Réputation -5&lt;&lt;/notify&gt;&gt;&lt;&lt;set $rep -=5&gt;&gt;&lt;&lt;set $exc +=20&gt;&gt;&lt;&lt;set $hygiene -=20&gt;&gt;&lt;&lt;set $bes +=15&gt;&gt;Vous ne mettez pas longtemps à trouver des toilettes publiques.
 Vous y entrez sans trop réfléchir et faites votre affaire.
 
 &lt;img id=&quot;cruise&quot; src=&quot;&quot; height=&quot;350px&quot;/&gt;&lt;script&gt;
   var imageFiles = [&quot;cruise1.webp&quot;, &quot;cruise2.webp&quot;, &quot;cruise3.gif&quot;, &quot;cruise4.webp&quot;];
   var imgElement = document.getElementById(&quot;cruise&quot;);
   var randomIndex = Math.floor(Math.random() * imageFiles.length);
-  imgElement.src = &quot;img/cruising&amp;exhib/&quot; + imageFiles[randomIndex];&lt;/script&gt;
+  imgElement.src = &quot;img/cruisingexhib/&quot; + imageFiles[randomIndex];&lt;/script&gt;
   
 &lt;&lt;linkreplace &quot;Tu le laisse se finir sur ton visage.&quot;&gt;&gt;&lt;&lt;if not $FTCruiseFan&gt;&gt;&lt;&lt;set $FTCruiseFan to true&gt;&gt;&lt;&lt;notify 4s &#39;&#39;&gt;&gt;Corruption +1&lt;&lt;/notify&gt;&gt;&lt;&lt;set $cor +=1&gt;&gt;&lt;&lt;/if&gt;&gt;Il n&#39;a pas l&#39;air de pouvoir tenir longtemps de toute façon.
 
-&lt;img src=&quot;img\cruising&amp;exhib\facial1.gif&quot; height=&quot;350px&quot;&gt;
+&lt;img src=&quot;img\cruisingexhib\facial1.gif&quot; height=&quot;350px&quot;&gt;
 
 @@.pjth;Au moins, ça aura été rapide !@@
 
